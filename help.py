@@ -4,7 +4,7 @@ d = {}
 first,last = 0,0
 new_str = ""
 for i in range(len(s)):
-    if s[i].isalnum():
+    if s[i].isalnum() or s[i] == "'":
         last += 1        
     else:
         if first < last:
